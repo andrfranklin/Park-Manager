@@ -1,13 +1,13 @@
 package estacionamento;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 
 import automovel.Automovel;
 import automovel.Carro;
 import automovel.Moto;
 
 public class Estacionamento {
-    private ArrayList<Automovel> automoveis;
+    private HashSet<Automovel> automoveis;
     private double taxaCarro;
     private double taxaMoto;
     private double lucroTotalDia;
@@ -18,7 +18,7 @@ public class Estacionamento {
     private double precoMoto;
 
     public Estacionamento(double taxaCarro, double taxaMoto, double precoCarro, double precoMoto) {
-        this.automoveis = new ArrayList<>();
+        this.automoveis = new HashSet<>();
         this.lucroTotalDia = 0;
         this.taxaCarro = taxaCarro;
         this.taxaMoto = taxaMoto;
